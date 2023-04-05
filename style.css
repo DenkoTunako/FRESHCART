@@ -1,0 +1,149 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1300px;
+  margin: auto;
+}
+
+/* Header START  */
+
+.header-up {
+  background-color: #f0f3f2;
+  position: relative;
+}
+
+.header-up-wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  color: grey;
+  font-size: 14px;
+}
+.header-up-wrapper a {
+  align-items: center;
+  display: flex;
+  column-gap: 5px;
+  color: grey;
+  font-size: 14px;
+}
+
+.header-up-wrapper a img {
+  width: 18px;
+  height: 14px;
+}
+.dil-seçeneği {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.dropdown-menu {
+  position: absolute;
+  z-index: 3;
+  margin-top: 20px;
+  margin-left: 50px;
+  display: none;
+  border: 1px solid grey;
+  padding: 5px 5px;
+  width: 120px;
+}
+.dropdown-menu.active {
+  display: block;
+}
+.dropdown-menu li {
+  padding: 10px 25px;
+}
+.dropdown-menu li img {
+  width: 18px;
+  height: 14px;
+}
+.dropdown-menu li:hover {
+  background-color: darkgrey;
+}
+
+/* header mid  */
+.header-mid {
+}
+.header-mid-wrapper {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-mid-center {
+  display: flex;
+  column-gap: 10px;
+}
+.search-input {
+  position: relative;
+}
+.header-mid-center input {
+  width: 600px;
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 8px;
+  border: solid 1.5px #d3d3d3;
+  outline: none;
+}
+.header-mid-center .bi-search {
+  position: absolute;
+  right: 15px;
+  top: 25%;
+  font-weight: 700;
+}
+.header-mid-center input:focus {
+  box-shadow: 0 0 1pt 1pt greenyellow;
+  outline-width: 0px;
+}
+
+.header-mid-center button {
+  color: grey;
+  background-color: white;
+  outline: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: 1px solid darkgray;
+  font-weight: 700;
+  cursor: pointer;
+}
+.header-mid-center button:hover {
+  background-color: darkgrey;
+}
+
+.header-mid-right {
+  display: flex;
+  column-gap: 15px;
+  position: relative;
+}
+.header-mid-right i {
+  font-size: 20px;
+  color: grey;
+}
+.favoriler-icon {
+  position: relative;
+}
+.sepet-icon {
+  position: relative;
+}
+
+.header-mid-right div span {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  color: white;
+  background-color: green;
+  padding: 5px 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  top: -5px;
+  left: 12px;
+}
