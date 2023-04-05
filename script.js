@@ -7,4 +7,9 @@ dilseçeneği.addEventListener('click',()=>{
 });
 
 
+var swiper = new Swiper(".mySwiper", {
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
 
