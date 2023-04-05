@@ -157,6 +157,7 @@ header {
 .navigation-wrapper {
   column-gap: 20px;
   display: flex;
+  position: relative;
 }
 
 .all-departments {
@@ -198,7 +199,8 @@ header {
   position: absolute;
   padding-top: 20px;
   display: none;
-}
+  border-radius: 10px;
+ }
 
 .dropdown-menu ul li a {
   padding: 5px 25px;
@@ -214,3 +216,79 @@ header {
 .navigation-wrapper ul li:hover .dropdown-menu ul {
   display: block;
 }
+
+.all-departments:hover .dropdown-menu-all ul {
+  display: block;
+}
+/* megamenu */
+
+.dropdown-megamenu {
+  position: absolute;
+  left: -250px;
+  display: flex;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: white;
+  padding: 5px 5px;
+  padding-top: 20px;
+  column-gap: 50px;
+  border-radius: 10px;
+}
+
+.dropdown-megamenu ul {
+  background-color: white;
+  padding: 5px 5px;
+  padding-top: 20px;
+  display: none;
+  width: 300px;
+  
+}
+
+.dropdown-megamenu ul li a {
+  padding: 5px 25px;
+  padding-right: 60px;
+  font-weight: 100;
+  color: gray;
+}
+
+.dropdown-megamenu ul li h4 {
+  color: #088a08;
+  padding: 20px 20px;
+}
+.dropdown-megamenu ul img {
+  width: 100%;
+}
+
+.dropdown-megamenu ul li a:hover {
+  background-color: #d3d3d3;
+  color: black;
+}
+.navigation-wrapper ul li:hover .dropdown-megamenu ul {
+  display: block;
+}
+
+
+/* asdasd */
+
+.dropdown-menu-all ul {
+  left: 0;
+  border-radius: 10px;
+  margin-top: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: white;
+  padding: 5px 5px;
+  display: block;
+  position: absolute;
+  padding-top: 20px;
+  display: none;
+}
+
+.dropdown-menu-all ul li a {
+  padding: 5px 25px;
+  padding-right: 60px;
+  font-weight: 100;
+  color: gray;
+}
+
+.dropdown-menu-all ul li a:hover {
+  background-color: #d3d3d3;
+  color: black;
