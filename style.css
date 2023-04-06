@@ -107,6 +107,7 @@ header {
 }
 
 .header-mid-center button {
+  transition: 0.3s;
   color: grey;
   background-color: white;
   outline: none;
@@ -344,6 +345,7 @@ header {
   margin-top: 20px;
 }
 .slider-text button {
+  transition: 0.3s;
   margin-top: 20px;
   padding: 10px 15px;
   background-color: black;
@@ -450,6 +452,7 @@ header {
   outline: none;
   border: none;
   cursor: pointer;
+  transition: 0.3s;
 }
 .banner-text button:hover {
   opacity: 0.3;
@@ -469,6 +472,177 @@ header {
   column-gap: 10px;
   margin-top: 50px;
   row-gap: 20px;
+}
+
+.popular-products {
+  border: 1px solid #d3d3d3;
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: 0.4s;
+}
+.product-img {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-actions {
+  position: absolute;
+  top: 45%;
+  left: 27%;
+  display: flex;
+  column-gap: 10px;
+  display: none;
+}
+.popular-products:hover {
+  border: 1px solid #088a08;
+}
+
+.popular-products:hover .product-actions {
+  display: block;
+}
+
+.product-actions button {
+  padding: 8px 8px;
+  border-radius: 5px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: rgba(100, 100, 111, 0.2) 5px 5px 5px 5px;
+}
+.product-actions button:hover {
+  background-color: #088a08;
+  color: white;
+}
+
+.popular-products img {
+  width: 80%;
+  height: auto;
+}
+
+.prd-text {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  padding: 10px 20px;
+}
+
+.prd-text h6 {
+  font-size: 10px;
+  color: grey;
+}
+.prd-text h2 {
+  margin-top: 10px;
+  font-size: 15px;
+}
+.prd-stars {
+  margin-top: 10px;
+  font-size: 15px;
+  color: gold;
+}
+.prd-stars span {
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  color: grey;
+}
+
+.prd-price {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 10px;
+  padding: 5px 20px;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.prd-price p {
+  font-weight: 900;
+}
+
+.prd-price p span {
+  color: grey;
+  font-weight: 100;
+  text-decoration: line-through;
+  padding-left: 5px;
+}
+
+.prd-price button {
+  padding: 5px 5px;
+  background-color: #088a08;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-weight: 900;
+  transition: 0.3s;
+}
+
+.prd-price button:hover {
+  background-color: darkgreen;
+}
+/* ! Popular Products  END */
+/* ! Daily Best Sells  START */
+.daily-wrapper {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  column-gap: 12px;
+}
+
+.daily-title {
+  margin-top: 50px;
+}
+.daily-img {
+  position: relative;
+}
+
+.daily-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.daily-text {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+.daily-text h4 {
+  color: white;
+  font-size: 25px;
+}
+.daily-text h6 {
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 100;
+  color: white;
+}
+
+.daily-text button {
+  margin-top: 20px;
+  font-weight: 900;
+  padding: 10px 15px;
+  background-color: #088a08;
+  color: white;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.daily-text button:hover {
+  background-color: darkgreen;
+}
+
+.popular-products-title {
+  margin-top: 50px;
 }
 
 .popular-products {
@@ -530,49 +704,88 @@ header {
   color: grey;
 }
 .prd-text h2 {
-  margin-top: 10px;
   font-size: 15px;
 }
-.prd-stars {
-  margin-top: 10px;
+.prd-starss {
   font-size: 15px;
   color: gold;
 }
 .prd-stars span {
-  margin-top: 10px;
   font-size: 12px;
   font-weight: 700;
   color: grey;
 }
 
-.prd-price {
+.prd-prices {
   display: flex;
   justify-content: space-between;
   column-gap: 10px;
   padding: 5px 20px;
 }
-.prd-price p {
+.prd-prices p {
   font-weight: 900;
 }
 
-.prd-price p span {
+.prd-prices p span {
   color: grey;
   font-weight: 100;
   text-decoration: line-through;
   padding-left: 5px;
 }
+.prd-btn {
+  padding: 10px 20px;
+}
 
-.prd-price button {
-  padding: 5px 5px;
+.prd-btn button {
+  padding: 10px 20px;
+  width: 100%;
   background-color: #088a08;
   border-radius: 5px;
   border: none;
   cursor: pointer;
   color: white;
   font-weight: 900;
+  transition: 0.3s;
 }
 
-.prd-price button:hover {
+.prd-btn button:hover {
   background-color: darkgreen;
 }
-/* ! Popular Products  END */
+.cart-date {
+  padding: 0px 12px;
+  display: grid;
+  grid-template-columns: 22% 22% 22% 22%;
+  column-gap: 10px;
+}
+.cart-date div {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #d3d3d3;
+  justify-content: center;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 10px;
+  padding: 5px 5px;
+}
+/* ! Daily Best Sells  END */
+
+/* ! İNFO İCON  START */
+
+.info-icon-wrapper {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 50px;
+}
+.info-icon-wrapper h4 {
+  margin-top: 20px;
+  font-weight: 900;
+}
+
+.info-icon-wrapper p {
+  margin-top: 20px;
+  font-weight: 500;
+  color: grey;
+}
+
+/* ! İNFO İCON  END */
