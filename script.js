@@ -13,3 +13,13 @@ var swiper = new Swiper(".mySwiper", {
     },
   });
 
+
+  var sswiper = new Swiper(".smySwiper", {
+    slidesPerView: 6,
+    spaceBetween: 20,
+    freeMode: true,
+    pagination: {
+      el: ".swiper-paginations",
+      clickable: true,
+    },
+  });
